@@ -17,6 +17,7 @@ class Velocity extends AbstractPhysicalQuantity
         $meterpersecond->addAlias('meter per second');
         $meterpersecond->addAlias('metres per second');
         $meterpersecond->addAlias('metre per second');
+        $meterpersecond->addAlias('m s^-1');
         static::addUnit($meterpersecond);
 
         // kilometers per hour
@@ -43,6 +44,7 @@ class Velocity extends AbstractPhysicalQuantity
         // knot
         $newUnit = UnitOfMeasure::linearUnitFactory('knot', 0.514444);
         $newUnit->addAlias('knots');
+        $newUnit->addAlias('kts');
         static::addUnit($newUnit);
     }
 }
